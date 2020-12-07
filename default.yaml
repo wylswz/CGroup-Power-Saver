@@ -1,0 +1,6 @@
+rules:
+  # Limit 10% cpu usage for chrome
+  - process: ".*[Cc][Hh][Rr][Oo][Mm][Ee].*"
+    resource: "cpu"
+    amount: 10
+    when: "battery" # Battery currently doesn't work
